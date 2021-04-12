@@ -1,0 +1,322 @@
+/* ELEMENT STYLES -------------------- */
+
+body {
+  background: #e8e7e7;
+  font-family: arial;
+  text-transform: uppercase;
+}
+
+.navbar {
+  color: #fff;
+  padding: 5px 10px;
+  text-align: center;
+  align-items: center;
+  background-color: rgb(61, 59, 59);
+  border-bottom: solid 2px #d4caff;
+  overflow: hidden;
+}
+
+.header1 {
+  color: #000;
+  background-color: #fff;
+  
+} 
+
+.emp-list{
+  font-family: verdana;
+  font-size: 24px;
+}
+
+.emp-total{
+  padding-top: 5px;
+  font-size: 18px;
+}
+
+.header{
+  background-color: rgb(61, 59, 59);
+  height: 100px;
+}
+
+
+
+.header-title{
+  text-align: center;
+  color:white;
+  padding-top: 25px;
+}
+
+.header-nav{
+  text-align: right;
+  float: right;
+  padding-top: 40px;
+}
+
+.a{
+  display: block;
+  text-decoration: none;
+  color: #42b2df;
+}
+
+.logo{
+  padding-top: 5px;
+  padding-left: 5px;
+}
+
+.contact {
+  text-align: center;
+}
+
+.contactform{
+  text-align: center;
+  background-color: lightslategray;
+  padding: 5px;
+}
+
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+header h1 {
+  flex-grow: 1;
+  font-size: 1.5em;
+  letter-spacing: 2px;
+  font-weight: normal;
+}
+
+button {
+  outline: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* COMPONENT STYLES -------------------- */
+
+.employee {
+  display: flex;
+  font-size: 1.2em;
+  border-bottom: solid 2px #eeeeee;
+  letter-spacing: 2px;
+  flex:1;
+}
+
+.employee:last-of-type {
+  border-bottom-color: #d4caff;
+}
+
+.employee-name:hover .remove-employee {
+  visibility: visible;
+}
+
+.employee-name,
+.counter-items {
+  color: #2f2366;
+}
+
+.employee-name {
+  flex-grow: 1;
+  line-height: 3.5em;
+  padding-left: 10px;
+}
+
+.stats {
+  width: 70px;
+}
+
+.stats {
+  margin: 0 0 0 28px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.stats td:first-child {
+  text-align: right;
+  font-weight: normal;
+  letter-spacing: 2px;
+  font-size: 0.7em;
+}
+
+.stats td:last-child {
+  text-align: left;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 50%; /* Full width */
+  padding: 10px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 0px; /* Bottom margin */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #42b2df;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+
+/* About */
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  align-items: center;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+  margin-left: 100px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 50%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.img{
+  height: 200px;
+  width: 250px;
+  float: center;
+}
+
+/* .footer {
+  text-align: center;
+  color: #fff;
+  background-color: rgb(61, 59, 59);
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+} */
+
+.footer-basic {
+  padding: 5px 0;
+  background-color:rgb(61, 59, 59);;
+  color:#fff;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  
+}
+
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+}
+
+.footer-basic li {
+  padding:0 10px;
+}
+
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity:1;
+}
+
+.footer-basic .social {
+  text-align:center;
+  padding-bottom:15px;
+}
+
+.footer-basic .social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin:0 8px;
+  color:inherit;
+  opacity:0.75;
+  
+}
+
+.footer-basic .social > a:hover {
+  opacity:0.9;
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
+}
+

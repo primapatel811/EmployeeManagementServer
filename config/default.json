@@ -1,4 +1,4 @@
 {
-    "MongoDBConnection" : "mongodb+srv://jainish:010597Jp!@cluster.rxy28.mongodb.net/EmployeeManagement?retryWrites=true&w=majority",
+    "MongoDBConnection" : "mongodb+srv://prima123:wUpqwozDOSzUfwj5@cluster0.kikz3.mongodb.net/EmployeeManagement?retryWrites=true&w=majority",
     "jwtsecret": "secret"
 }
